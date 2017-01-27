@@ -484,7 +484,9 @@ public class Games.RetroRunner : Object, Runner {
 
 		var screenshot_path = get_screenshot_path ();
 
-		pixbuf.save (screenshot_path, "png");
+		var x_dpi = pixbuf.get_option ("x-dpi");
+		var y_dpi = pixbuf.get_option ("y-dpi");
+		pixbuf.save (screenshot_path, "png", "x-dpi", x_dpi, "y-dpi", y_dpi);
 	}
 
 	private void load_screenshot () throws Error {
