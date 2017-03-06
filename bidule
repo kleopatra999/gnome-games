@@ -1,0 +1,898 @@
+3504c3504
+<         <disc id="SLES-00642"/>
+---
+>         <disc id="SLES-00647"/>
+3567,3569d3566
+<         <disc id="SLES-03695"/>
+<       </discs>
+<       <discs>
+3882c3879
+<         <disc id="SLES-00700"/>
+---
+>         <disc id="SCES-00700"/>
+7961,7983c7958,7974
+<       <discs>
+<         <disc id="SLES-00530">
+<           <_title>GDI</_title>
+<         </disc>
+<         <disc id="SLES-10530">
+<           <_title>NOD</_title>
+<         </disc>
+<       </discs>
+<       <discs>
+<         <disc id="SLES-00531">
+<           <_title>GDI</_title>
+<         </disc>
+<         <disc id="SLES-10531">
+<           <_title>NOD</_title>
+<         </disc>
+<       </discs>
+<       <discs>
+<         <disc id="SLUS-00379">
+<           <_title>GDI</_title>
+<         </disc>
+<         <disc id="SLUS-00410">
+<           <_title>NOD</_title>
+<         </disc>
+---
+>       <discs includes="GDI + NOD discs">
+>         <disc id="SLUS-00379"/>
+>         <disc id="SLUS-00410"/>
+>       </discs>
+>       <controllers>
+>         <controller type="classic-gamepad"/>
+>       </controllers>
+>     </game>
+>     <game>
+>       <_title>Command &amp; Conquer</_title>
+>       <discs includes="GDI Disc + NOD Disc">
+>         <disc id="SLES-00530"/>
+>         <disc id="SLES-10530"/>
+>       </discs>
+>       <discs includes="GDI Disc + NOD Disc">
+>         <disc id="SLES-00531"/>
+>         <disc id="SLES-10531"/>
+8001,8007c7992,7994
+<       <discs>
+<         <disc id="SLES-01345">
+<           <_title>Die Alliierten</_title>
+<         </disc>
+<         <disc id="SLES-11345">
+<           <_title>Die Sowjets</_title>
+<         </disc>
+---
+>       <discs includes="Allies Disc + Soviet Disc">
+>         <disc id="SLES-01345"/>
+>         <disc id="SLES-11345"/>
+8015,8021c8002,8004
+<       <discs>
+<         <disc id="SLES-01006">
+<           <_title>Les Alliés</_title>
+<         </disc>
+<         <disc id="SLES-11006">
+<           <_title>Les Soviétiques</_title>
+<         </disc>
+---
+>       <discs includes="Allies Disc + Soviet Disc">
+>         <disc id="SLES-01006"/>
+>         <disc id="SLES-11006"/>
+8029,8035c8012,8014
+<       <discs>
+<         <disc id="SLES-01344">
+<           <_title>Les Alliés</_title>
+<         </disc>
+<         <disc id="SLES-11344">
+<           <_title>Les Soviétiques</_title>
+<         </disc>
+---
+>       <discs includes="Allies Disc + Soviet Disc">
+>         <disc id="SLES-01344"/>
+>         <disc id="SLES-11344"/>
+8043,8049c8022,8024
+<       <discs>
+<         <disc id="SLUS-00431">
+<           <_title>Allies</_title>
+<         </disc>
+<         <disc id="SLUS-00485">
+<           <_title>Soviet</_title>
+<         </disc>
+---
+>       <discs includes="Allies Disc + Soviet Disc">
+>         <disc id="SLES-00949"/>
+>         <disc id="SLES-10949"/>
+8057,8063c8032,8034
+<       <discs>
+<         <disc id="SLES-00949">
+<           <_title>Allies</_title>
+<         </disc>
+<         <disc id="SLES-10949">
+<           <_title>Soviet</_title>
+<         </disc>
+---
+>       <discs includes="Allied + Soviet discs">
+>         <disc id="SLUS-00431"/>
+>         <disc id="SLUS-00485"/>
+8071,8077c8042,8044
+<       <discs>
+<         <disc id="SLUS-00665">
+<           <_title>Allies</_title>
+<         </disc>
+<         <disc id="SLUS-00667">
+<           <_title>Soviet</_title>
+<         </disc>
+---
+>       <discs includes="Allied + Soviet discs">
+>         <disc id="SLUS-00665"/>
+>         <disc id="SLUS-00667"/>
+9361c9328
+<       <_title>Dance Dance Revolution 2nd Remix</_title>
+---
+>       <_title>Dance Dance Revolution 2nd Remix - Append Club Version Vol.1</_title>
+9363c9330
+<         <disc id="SCPS-45428"/>
+---
+>         <disc id="SCPS-45456"/>
+9722,9732d9688
+<       <_title>Dead or Alive</_title>
+<       <discs>
+<         <disc id="SCPS-45190"/>
+<         <disc id="SCPS-45191"/>
+<       </discs>
+<       <discs>
+<         <disc id="SLPS-01261"/>
+<         <disc id="SLPS-01262"/>
+<       </discs>
+<     </game>
+<     <game>
+10520a10477,10494
+>       <_title>Digital Ehon Vol. 1 - Imadoki no Momotaro</_title>
+>       <discs>
+>         <disc id="SLPM-87103"/>
+>       </discs>
+>     </game>
+>     <game>
+>       <_title>Digital Ehon Vol. 2 - Imadoki no Kaguya Hime</_title>
+>       <discs>
+>         <disc id="SLPM-87104"/>
+>       </discs>
+>     </game>
+>     <game>
+>       <_title>Digital Ehon Vol. 3 - Imadoki no Saru kani</_title>
+>       <discs>
+>         <disc id="SLPM-87105"/>
+>       </discs>
+>     </game>
+>     <game>
+10611c10585
+<       <_title>Dino Crisis 5th Anniversary</_title>
+---
+>       <_title>Dino Crisis [Playstation the Best]</_title>
+11828c11802
+<         <disc id="SCES-03744"/>
+---
+>         <disc id="SCES-03706"/>
+11928,11933d11901
+<       <_title>Dokapon Ikari No Tetsuken</_title>
+<       <discs>
+<         <disc id="SLPS-01559"/>
+<       </discs>
+<     </game>
+<     <game>
+11942a11911,11916
+>       <_title>Doki Doki Poyatchio!!</_title>
+>       <discs>
+>         <disc id="SLPS-01573"/>
+>       </discs>
+>     </game>
+>     <game>
+12218a12193,12198
+>       <_title>Doubutsu Chara Navi Uranai 2 - Kosei Shinri Gaku + Renai Uranai Puzzle</_title>
+>       <discs>
+>         <disc id="SLPS-03526"/>
+>       </discs>
+>     </game>
+>     <game>
+13094a13075,13101
+>       <_title>EPS Series vol.03 - Tomomi Tsunoda - Come and kiss me</_title>
+>       <discs>
+>         <disc id="SCPS-40003"/>
+>       </discs>
+>       <controllers>
+>         <controller type="classic-gamepad"/>
+>       </controllers>
+>     </game>
+>     <game>
+>       <_title>EPS Series vol.04 - Tomoa Yamamoto - Noise reduction</_title>
+>       <discs>
+>         <disc id="SCPS-40004"/>
+>       </discs>
+>       <controllers>
+>         <controller type="classic-gamepad"/>
+>       </controllers>
+>     </game>
+>     <game>
+>       <_title>EPS Series vol.05 - Mizutani Junko - Believer dreamer</_title>
+>       <discs>
+>         <disc id="SCPS-40005"/>
+>       </discs>
+>       <controllers>
+>         <controller type="classic-gamepad"/>
+>       </controllers>
+>     </game>
+>     <game>
+14877,14884c14884,14887
+<       <_title>Final Fantasy Anthology</_title>
+<       <discs>
+<         <disc id="SCES-03840">
+<           <_title>Final Fantasy IV</_title>
+<         </disc>
+<         <disc id="SCES-13840">
+<           <_title>Final Fantasy X [Demo]</_title>
+<         </disc>
+---
+>       <_title>Final Fantasy - Origins</_title>
+>       <discs includes="Final Fantasy I + Final Fantasy II">
+>         <disc id="SLES-04034"/>
+>         <disc id="SLES-14034"/>
+14886,14892c14889,14901
+<       <discs>
+<         <disc id="SLUS-00879">
+<           <_title>Final Fantasy V</_title>
+<         </disc>
+<         <disc id="SLUS-00900">
+<           <_title>Final Fantasy VI</_title>
+<         </disc>
+---
+>       <discs includes="Final Fantasy + Final Fantasy II">
+>         <disc id="SLUS-01541"/>
+>       </discs>
+>     </game>
+>     <game>
+>       <_title>Final Fantasy Anthology</_title>
+>       <discs includes="Final Fantasy IV + Final Fantasy V">
+>         <disc id="SCES-03840"/>
+>         <disc id="SCES-13840"/>
+>       </discs>
+>       <discs includes="Final Fantasy V and Final Fantasy VI">
+>         <disc id="SLUS-00879"/>
+>         <disc id="SLUS-00900"/>
+14900,14906c14909,14911
+<       <discs>
+<         <disc id="SLUS-01360">
+<           <_title>Final Fantasy IV</_title>
+<         </disc>
+<         <disc id="SLUS-01363">
+<           <_title>Chrono Trigger</_title>
+<         </disc>
+---
+>       <discs includes="Final Fantasy IV and Chrono Trigger">
+>         <disc id="SLUS-01360"/>
+>         <disc id="SLUS-01363"/>
+15031,15046d15035
+<       <_title>Final Fantasy Origins</_title>
+<       <discs>
+<         <disc id="SLES-04034">
+<           <_title>Final Fantasy</_title>
+<         </disc>
+<         <disc id="SLES-14034">
+<           <_title>Final Fantasy II</_title>
+<         </disc>
+<       </discs>
+<       <discs>
+<         <disc id="SLUS-01541">
+<           <_title>Final Fantasy &amp; Final Fantasy II</_title>
+<         </disc>
+<       </discs>
+<     </game>
+<     <game>
+15104c15093
+<       <discs>
+---
+>       <discs includes="Final Fantasy VI + Final Fantasy X [Demo]">
+15105a15095
+>         <disc id="SCED-50642"/>
+15160c15150
+<       <discs>
+---
+>       <discs includes="Final Fantasy VII International + Bonus Disc">
+15164,15166c15154
+<         <disc id="SLPS-01060">
+<           <_title>Perfect Guide</_title>
+<         </disc>
+---
+>         <disc id="SLPS-01060"/>
+15174c15162
+<       <discs>
+---
+>       <discs includes="Final Fantasy VII International [Psone Books] + Bonus Disc">
+15178,15180c15166
+<         <disc id="SLPS-91443">
+<           <_title>Perfect Guide</_title>
+<         </disc>
+---
+>         <disc id="SLPS-91443"/>
+15188c15174
+<       <discs>
+---
+>       <discs includes="Final Fantasy VII International [Ultimate Hits] + Bonus Disc">
+15192,15194c15178
+<         <disc id="SLPM-87383">
+<           <_title>Perfect Guide</_title>
+<         </disc>
+---
+>         <disc id="SLPM-87383"/>
+16018,16027c16002,16005
+<       <discs>
+<         <disc id="SLPM-87330">
+<           <_title>Front Mission 1st</_title>
+<         </disc>
+<         <disc id="SLPM-87331">
+<           <_title>Front Mission 2</_title>
+<         </disc>
+<         <disc id="SLPM-87332">
+<           <_title>Front Mission 3</_title>
+<         </disc>
+---
+>       <discs includes="Front Mission 1st + Front Mission 2 + Front Mission 3">
+>         <disc id="SLPM-87330"/>
+>         <disc id="SLPM-87331"/>
+>         <disc id="SLPM-87332"/>
+17518,17551c17496,17511
+<       <discs>
+<         <disc id="SCES-02380">
+<           <_title>Arcade Mode</_title>
+<         </disc>
+<         <disc id="SCES-12380">
+<           <_title>GT Mode</_title>
+<         </disc>
+<       </discs>
+<       <discs>
+<         <disc id="SCPS-10116">
+<           <_title>Arcade Disc</_title>
+<         </disc>
+<         <disc id="SCPS-10117">
+<           <_title>Gran-Turismo Disc</_title>
+<         </disc>
+<       </discs>
+<       <discs>
+<         <disc id="SCPS-45457">
+<           <_title>Arcade Disc</_title>
+<         </disc>
+<         <disc id="SCPS-45458">
+<           <_title>Gran-Turismo Disc</_title>
+<         </disc>
+<       </discs>
+<       <discs>
+<         <disc id="SCUS-94455">
+<           <_title>Arcade Mode</_title>
+<         </disc>
+<         <disc id="SCUS-94488">
+<           <_title>Simulation Mode</_title>
+<         </disc>
+<         <disc id="SCUS-94588">
+<           <_title>Bonus Disc</_title>
+<         </disc>
+---
+>       <discs includes="Arcade Disc + Simulation Disc">
+>         <disc id="SCES-02380"/>
+>         <disc id="SCES-12380"/>
+>       </discs>
+>       <discs includes="Arcade Disc + Simulation Disc">
+>         <disc id="SCPS-10116"/>
+>         <disc id="SCPS-10117"/>
+>       </discs>
+>       <discs includes="Arcade Disc + Simulation Disc">
+>         <disc id="SCPS-45457"/>
+>         <disc id="SCPS-45458"/>
+>       </discs>
+>       <discs includes="Arcade Disc + Simulation Disc + Bonus PlayStation Disc">
+>         <disc id="SCUS-94455"/>
+>         <disc id="SCUS-94488"/>
+>         <disc id="SCUS-94588"/>
+17556,17570c17516,17522
+<       <discs>
+<         <disc id="SCAJ-01001">
+<           <_title>Arcade Disc</_title>
+<         </disc>
+<         <disc id="SCAJ-01002">
+<           <_title>Gran-Turismo Disc</_title>
+<         </disc>
+<       </discs>
+<       <discs>
+<         <disc id="SCPS-91326">
+<           <_title>Arcade Disc</_title>
+<         </disc>
+<         <disc id="SCPS-91327">
+<           <_title>Gran-Turismo Disc</_title>
+<         </disc>
+---
+>       <discs includes="Arcade Disc + Simulation Disc">
+>         <disc id="SCAJ-01001"/>
+>         <disc id="SCAJ-01002"/>
+>       </discs>
+>       <discs includes="Arcade Disc + Simulation Disc">
+>         <disc id="SCPS-91326"/>
+>         <disc id="SCPS-91327"/>
+17598,17606c17550
+<       <_title>Grand Theft Auto</_title>
+<       <discs>
+<         <disc id="SLUS-00106"/>
+<         <disc id="SLUS-00789"/>
+<         <disc id="SLUS-00846"/>
+<       </discs>
+<     </game>
+<     <game>
+<       <_title>Grand Theft Auto</_title>
+---
+>       <_title>Grand Theft Auto - Collector's Edition</_title>
+17614c17558
+<       <_title>Grand Theft Auto</_title>
+---
+>       <_title>Grand Theft Auto - Collector's Edition</_title>
+17616a17561
+>         <disc id="SLUS-00789"/>
+17619,17621d17563
+<       <controllers>
+<         <controller type="classic-gamepad"/>
+<       </controllers>
+17624c17566
+<       <_title>Grand Theft Auto - Collector's Edition</_title>
+---
+>       <_title>Grand Theft Auto - London [Special Edition]</_title>
+17630c17572,17581
+<       <_title>Grand Theft Auto - Collector's Edition</_title>
+---
+>       <_title>Grand Theft Auto - Mission Pack #1: London 1969</_title>
+>       <discs>
+>         <disc id="SLES-01714"/>
+>       </discs>
+>       <discs>
+>         <disc id="SLUS-00846"/>
+>       </discs>
+>     </game>
+>     <game>
+>       <_title>Grand Theft Auto 2</_title>
+17642,17645c17593
+<       <_title>Grand Theft Auto - Mission Pack #1: London 1969</_title>
+<       <discs>
+<         <disc id="SLES-01714"/>
+<       </discs>
+---
+>       <_title>Grand Theft Auto [Director's Cut]</_title>
+17646a17595
+>         <disc id="SLUS-00106"/>
+17648a17598,17600
+>       <controllers>
+>         <controller type="classic-gamepad"/>
+>       </controllers>
+18623a18576,18581
+>       <_title>Hatsukoi Valentine Special</_title>
+>       <discs>
+>         <disc id="SLPS-01452"/>
+>       </discs>
+>     </game>
+>     <game>
+18738a18697,18702
+>       <_title>Heiwa Parlor! - Pro Bundori King Special</_title>
+>       <discs>
+>         <disc id="SLPS-03373"/>
+>       </discs>
+>     </game>
+>     <game>
+19111a19076,19081
+>       <_title>Hissatsu Pachi-Slot Station 3</_title>
+>       <discs>
+>         <disc id="SLPS-02683"/>
+>       </discs>
+>     </game>
+>     <game>
+19135a19106,19111
+>       <_title>Hissatsu Pachinko Station - Classic - Fukkatsu! Natsukashi no Meiki-tachi</_title>
+>       <discs>
+>         <disc id="SLPS-01963"/>
+>       </discs>
+>     </game>
+>     <game>
+19147a19124,19135
+>       <_title>Hissatsu Pachinko Station - Now2</_title>
+>       <discs>
+>         <disc id="SLPS-02511"/>
+>       </discs>
+>     </game>
+>     <game>
+>       <_title>Hissatsu Pachinko Station - Now3 - Youkai Engei</_title>
+>       <discs>
+>         <disc id="SLPS-02558"/>
+>       </discs>
+>     </game>
+>     <game>
+21526c21514
+<         <disc id="SLES-02753"/>
+---
+>         <disc id="SLUS-00941"/>
+21532c21520
+<         <disc id="SLUS-00941"/>
+---
+>         <disc id="SLES-02753"/>
+22141c22129
+<       <_title>Kero Kero King</_title>
+---
+>       <_title>Kero Kero King [Limited Edition]</_title>
+22702c22690
+<       <_title>Killer Bass ( Magical 1500 Series )</_title>
+---
+>       <_title>Killer Bass [Magical 1500 Series]</_title>
+24986,24987c24974,24975
+<         <disc id="SLES-03159"/>
+<         <disc id="SLES-13159"/>
+---
+>         <disc id="SLES-03174"/>
+>         <disc id="SLES-13174"/>
+25000,25010c24988,24989
+<         <disc id="SLES-03162"/>
+<         <disc id="SLES-13162"/>
+<       </discs>
+<     </game>
+<     <game>
+<       <_title>Louvre - La maledizione finale</_title>
+<       <discs>
+<         <disc id="SLES-03162"/>
+<       </discs>
+<       <discs>
+<         <disc id="SLUS-01231"/>
+---
+>         <disc id="SLES-03160"/>
+>         <disc id="SLES-13160"/>
+25020,25021c24999,25000
+<         <disc id="SLES-03160"/>
+<         <disc id="SLES-13160"/>
+---
+>         <disc id="SLES-03159"/>
+>         <disc id="SLES-13159"/>
+25287c25266
+<       <_title>Lupin the Third Chateau De Cagliostro (Playstation the Best)</_title>
+---
+>       <_title>Lupin the Third Chateau De Cagliostro [Playstation the Best]</_title>
+25433c25412
+<       <_title>MTV Sports Skateboarding Featuring Andy MacDonald</_title>
+---
+>       <_title>MTV Sports Pure Ride</_title>
+25435c25414,25417
+<         <disc id="SLUS-01232"/>
+---
+>         <disc id="SLES-03162"/>
+>       </discs>
+>       <discs>
+>         <disc id="SLUS-01231"/>
+26310c26292
+<         <disc id="SLUS-01362"/>
+---
+>         <disc id="SLES-03378"/>
+26316c26298
+<         <disc id="SLES-03378"/>
+---
+>         <disc id="SLUS-01362"/>
+27008c26990
+<       <discs>
+---
+>       <discs includes="Metal Gear Solid + Bonus Disc (GensoSuikoden II Demo)">
+27011,27013c26993
+<         <disc id="SCPS-45322">
+<           <_title>Genso Suikoden II Demo</_title>
+<         </disc>
+---
+>         <disc id="SCPS-45322"/>
+27035c27015
+<       <discs>
+---
+>       <discs includes="Metal Gear Solid + Bonus Disc (GensoSuikoden II Demo)">
+27038,27040c27018
+<         <disc id="SLPM-86116">
+<           <_title>Genso Suikoden II Demo</_title>
+<         </disc>
+---
+>         <disc id="SLPM-86116"/>
+27118a27097,27104
+>       <_title>Metal Gear Solid [Premium Package]</_title>
+>       <discs includes="Metal Gear Solid + Bonus Disc">
+>         <disc id="SLPM-86111"/>
+>         <disc id="SLPM-86112"/>
+>         <disc id="SLPM-86113"/>
+>       </discs>
+>     </game>
+>     <game>
+27254c27240
+<       <_title>Michinoku Hisen Koimonogatari</_title>
+---
+>       <_title>Michinoku Hitou Koi Monogatari</_title>
+27263c27249
+<       <_title>Michinoku Hisen Koimonogatari Kai</_title>
+---
+>       <_title>Michinoku Hitou Koi Monogatari Kai</_title>
+27897c27883
+<       <_title>Momotarou Densetsu (PSOne Books)</_title>
+---
+>       <_title>Momotarou Densetsu (Playstation The Best)</_title>
+27899c27885
+<         <disc id="SLPM-87101"/>
+---
+>         <disc id="SLPS-91171"/>
+27903c27889
+<       <_title>Momotarou Densetsu (Playstation The Best)</_title>
+---
+>       <_title>Momotarou Densetsu [PSOne Books]</_title>
+27905c27891
+<         <disc id="SLPS-91171"/>
+---
+>         <disc id="SLPM-87101"/>
+28649a28636,28641
+>         <disc id="SLPS-03000"/>
+>       </discs>
+>     </game>
+>     <game>
+>       <_title>Ms Pac-Man - Maze Madness</_title>
+>       <discs>
+28663,28668d28654
+<       <_title>Ms Pac-Man - Maze Madness</_title>
+<       <discs>
+<         <disc id="SLPS-03000"/>
+<       </discs>
+<     </game>
+<     <game>
+30610c30596
+<         <disc id="SLUS-00602"/>
+---
+>         <disc id="SLES-00933"/>
+30616c30602
+<         <disc id="SLES-00933"/>
+---
+>         <disc id="SLUS-00602"/>
+31254c31240
+<         <disc id="SLES-10011"/>
+---
+>         <disc id="SCES-10011"/>
+35544,35546c35530
+<         <disc id="SCPS-45355">
+<           <_title>Ridge Racer Hi-Spec Ver.</_title>
+<         </disc>
+---
+>         <disc id="SCPS-45355"/>
+35550,35552c35534
+<         <disc id="SLPS-01801">
+<           <_title>Ridge Racer Hi-Spec Ver.</_title>
+<         </disc>
+---
+>         <disc id="SLPS-01801"/>
+35554c35536
+<       <discs>
+---
+>       <discs includes="Ridge Racer Type 4 + Bonus Disc">
+35556,35558c35538
+<         <disc id="SLUS-90049">
+<           <_title>Ridge Racer Bonus Turbo Mode Disc</_title>
+<         </disc>
+---
+>         <disc id="SLUS-90049"/>
+35565,35567c35545
+<         <disc id="SLPS-01799">
+<           <_title>Ridge Racer Hi-Spec Ver.</_title>
+<         </disc>
+---
+>         <disc id="SLPS-01799"/>
+36710,36712c36688
+<         <disc id="SCED-01832">
+<           <_title>Ridge Racer Hi-Spec Demo</_title>
+<         </disc>
+---
+>         <disc id="SCED-01832"/>
+38637c38613
+<         <disc id="SCES-04177"/>
+---
+>         <disc id="SLES-04177"/>
+38909c38885
+<         <disc id="SCUS-94110"/>
+---
+>         <disc id="SLES-00106"/>
+38918c38894
+<         <disc id="SLES-00106"/>
+---
+>         <disc id="SCUS-94110"/>
+42927,42936d42902
+<         <disc id="SLUS-00381"/>
+<         <disc id="SLUS-00386"/>
+<       </discs>
+<       <controllers>
+<         <controller type="classic-gamepad"/>
+<       </controllers>
+<     </game>
+<     <game>
+<       <_title>Star Wars - Rebel Assault II - The Hidden Empire</_title>
+<       <discs>
+42964a42931,42940
+>       <_title>Star Wars - Rebel Assault II - The Hidden Empire</_title>
+>       <discs>
+>         <disc id="SLUS-00381"/>
+>         <disc id="SLUS-00386"/>
+>       </discs>
+>       <controllers>
+>         <controller type="classic-gamepad"/>
+>       </controllers>
+>     </game>
+>     <game>
+44712c44688
+<       <_title>TOCA Touring Car Championship [Platinum Version]</_title>
+---
+>       <_title>TOCA Touring Car Championship</_title>
+44721c44697
+<       <_title>TOCA Touring Car Championship</_title>
+---
+>       <_title>TOCA Touring Car Championship [Platinum Version]</_title>
+46037,46043c46013
+<         <disc id="SCUS-94150"/>
+<       </discs>
+<       <discs>
+<         <disc id="SLES-00170"/>
+<       </discs>
+<       <discs>
+<         <disc id="SLPS-00971"/>
+---
+>         <disc id="SLES-00573"/>
+46052c46022
+<         <disc id="SLES-00574"/>
+---
+>         <disc id="SLES-00638"/>
+46061c46031,46037
+<         <disc id="SLES-00573"/>
+---
+>         <disc id="SCUS-94150"/>
+>       </discs>
+>       <discs>
+>         <disc id="SLES-00170"/>
+>       </discs>
+>       <discs>
+>         <disc id="SLPS-00971"/>
+46070c46046
+<         <disc id="SLES-00638"/>
+---
+>         <disc id="SLES-00574"/>
+46367c46343
+<         <disc id="SLES-02345"/>
+---
+>         <disc id="SLUS-00931"/>
+46373c46349
+<         <disc id="SLUS-00931"/>
+---
+>         <disc id="SLES-02345"/>
+47554,47560c47530,47532
+<       <discs>
+<         <disc id="SLPS-00094">
+<           <_title>Thunder Storm LX-3</_title>
+<         </disc>
+<         <disc id="SLPS-00095">
+<           <_title>Roadblaster</_title>
+<         </disc>
+---
+>       <discs includes="Thunder Storm LX-3 Disc + Roadblaster Disc">
+>         <disc id="SLPS-00094"/>
+>         <disc id="SLPS-00095"/>
+47620c47592
+<         <disc id="SLES-02551"/>
+---
+>         <disc id="SLUS-01054"/>
+47626c47598
+<         <disc id="SLUS-01054"/>
+---
+>         <disc id="SLES-02551"/>
+47743c47715
+<         <disc id="SLES-00657"/>
+---
+>         <disc id="SCES-00657"/>
+47758c47730
+<         <disc id="SCPS-45514"/>
+---
+>         <disc id="SCES-02776"/>
+47761c47733
+<         <disc id="SLES-02776"/>
+---
+>         <disc id="SCPS-45514"/>
+47793,47799c47765,47767
+<       <discs>
+<         <disc id="SLPS-00383">
+<           <_title>Time Gal</_title>
+<         </disc>
+<         <disc id="SLPS-00384">
+<           <_title>Ninja Hayate</_title>
+<         </disc>
+---
+>       <discs includes="Time Gal Disc + Ninja Hayate Disc">
+>         <disc id="SLPS-00383"/>
+>         <disc id="SLPS-00384"/>
+47937,47939c47905,47910
+<       <discs includes="Tobal No.1+ Final Fantasy VII - Interactive Sampler CD (DEMO)">
+<         <disc id="SCUS-94208"/>
+<         <disc id="SCUS-94961"/>
+---
+>       <discs>
+>         <disc id="SCES-00497"/>
+>       </discs>
+>       <discs>
+>         <disc id="SLPS-00400"/>
+>         <disc id="SLPS-00401"/>
+47947,47952c47918,47920
+<       <discs>
+<         <disc id="SCES-00497"/>
+<       </discs>
+<       <discs>
+<         <disc id="SLPS-00400"/>
+<         <disc id="SLPS-00401"/>
+---
+>       <discs includes="Tobal No.1+ Final Fantasy VII - Interactive Sampler CD (DEMO)">
+>         <disc id="SCUS-94208"/>
+>         <disc id="SCUS-94961"/>
+48554,48560c48522
+<         <disc id="SLES-00107"/>
+<       </discs>
+<       <discs>
+<         <disc id="SLES-00718"/>
+<       </discs>
+<       <discs>
+<         <disc id="SLES-00719"/>
+---
+>         <disc id="SLPS-01200"/>
+48563c48525
+<         <disc id="SLES-00720"/>
+---
+>         <disc id="SLUS-00437"/>
+48572c48534
+<         <disc id="SLPS-01200"/>
+---
+>         <disc id="SLES-00107"/>
+48575c48537,48543
+<         <disc id="SLUS-00437"/>
+---
+>         <disc id="SLES-00718"/>
+>       </discs>
+>       <discs>
+>         <disc id="SLES-00719"/>
+>       </discs>
+>       <discs>
+>         <disc id="SLES-00720"/>
+50170,50175d50137
+<       <_title>V-Rally '97 - Championship Edition</_title>
+<       <discs>
+<         <disc id="SLES-00250"/>
+<       </discs>
+<     </game>
+<     <game>
+50193a50156,50161
+>       <_title>V-Rally - Championship Edition [Platinum Version]</_title>
+>       <discs>
+>         <disc id="SLES-00250"/>
+>       </discs>
+>     </game>
+>     <game>
+51740a51709,51711
+>     </game>
+>     <game>
+>       <_title>Who Wants to be a Millionaire - 2nd Edition</_title>
+52401,52404c52372
+<         <disc id="SLES-00088"/>
+<       </discs>
+<       <discs>
+<         <disc id="SLES-00137"/>
+---
+>         <disc id="SLUS-00063"/>
+52413c52381,52384
+<         <disc id="SLUS-00063"/>
+---
+>         <disc id="SLES-00088"/>
+>       </discs>
+>       <discs>
+>         <disc id="SLES-00137"/>
+52868,52873d52838
+<     </game>
+<     <game>
+<       <_title>X2</_title>
+<       <discs>
+<         <disc id="SLES-00455"/>
+<       </discs>
