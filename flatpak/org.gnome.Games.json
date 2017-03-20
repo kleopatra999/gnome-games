@@ -62,8 +62,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://git.gnome.org/browse/grilo"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.3.tar.xz",
+                    "sha256": "5c874222c7bdf42490cd56765a593c41407247706bb1f24a1bd5d007aa38a0e3"
                 }
             ],
             "cleanup": [ "/include", "/bin" ]
@@ -85,8 +86,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://git.gnome.org/browse/grilo-plugins"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.4.tar.xz",
+                    "sha256": "990282a518968c52f6a67b96c6b708e236a59da1c7c920ed45e6316ab49ddeb5"
                 }
             ],
             "cleanup": [ "/include" ]
@@ -101,8 +103,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://git.gnome.org/browse/tracker"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/tracker/1.12/tracker-1.12.0.tar.xz",
+                    "sha256": "" /* FIXME */
                 }
             ]
         },
@@ -110,8 +113,9 @@
             "name": "libevdev",
             "sources": [
                 {
-                     "type": "git",
-                     "url": "https://anongit.freedesktop.org/git/libevdev.git"
+                    "type": "archive",
+                    "url": "https://www.freedesktop.org/software/libevdev/libevdev-1.5.6.tar.xz",
+                    "sha256": "ecec7e9d66b1d3692f10b3b20aa97fb25e874a784c5552a7b1698091fef5a688"
                 }
             ]
         },
@@ -122,8 +126,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://git.gnome.org/browse/retro-gtk"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/retro-gtk/0.10/retro-gtk-0.10.0.tar.xz",
+                    "sha256": "2e6925418003f2931be82380a013e6e738c3738959a481005370dc13d45b93a0"
                 }
             ]
         },
@@ -132,8 +137,9 @@
             "post-install": ["mkdir -p /app/lib/libretro/extra.d"],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://git.gnome.org/browse/gnome-games"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-games/3.24/gnome-games-3.24.0.tar.xz",
+                    "sha256": "1a80deb2ff2951484ce0e8934569e53c8bf8045db4eb5eaa2dddce569796e8ff"
                 }
             ]
         }
