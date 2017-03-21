@@ -138,8 +138,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-games/3.24/gnome-games-3.24.0.1.tar.xz",
-                    "sha256": "e4ff465b55bdbbfd18208bdf117752737c71d93172e4cbf408e39eb3d499232b"
+                    "url": "https://git.gnome.org/browse/gnome-games/snapshot/gnome-games-3.24.0.tar.xz",
+                    "sha256": "ccefce9d11bf04bc7b226d225d5ef27c16eb0b1ad5d34c01efc10fedf1ff6734"
                 }
             ]
         }
