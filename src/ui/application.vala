@@ -9,7 +9,7 @@ public class Games.Application : Gtk.Application {
 
 	internal Application () {
 		Object (application_id: "org.gnome.Games",
-		        flags: ApplicationFlags.FLAGS_NONE);
+		        flags: ApplicationFlags.HANDLES_OPEN);
 	}
 
 	construct {
@@ -106,6 +106,22 @@ public class Games.Application : Gtk.Application {
 		return @"$data_dir/medias";
 	}
 
+	protected override void open (File[] files, string hint) {
+		if (window == null)
+			activate ();
+
+		if (files.length == 0)
+			return;
+
+		var uri = files[0].get_uri ();
+		var game = game_for_uri (uri);
+
+		if (game != null)
+			window.run_game (game);
+		// else
+			// TODO Display an error
+	}
+
 	protected override void activate () {
 		Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = true;
 
@@ -131,6 +147,29 @@ public class Games.Application : Gtk.Application {
 			window.loading_notification = true;
 
 		return false;
+	}
+
+	private Game? game_for_uri (string uri) {
+		Game? game = null;
+
+		var register = PluginRegister.get_register ();
+		register.foreach_plugin_registrar ((plugin_registrar) => {
+			if (game != null)
+				return;
+
+			try {
+				var plugin = plugin_registrar.get_plugin ();
+				var source = plugin.get_game_source ();
+				if (source == null)
+					return;
+
+				game = source.game_for_uri (uri);
+			}
+			catch (Error e) {
+			}
+		});
+
+		return game;
 	}
 
 	internal async void load_game_list () {

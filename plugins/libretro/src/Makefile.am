@@ -6,6 +6,7 @@ libgames_libretro_plugin_la_DEPENDENCIES = \
 	$(NULL)
 
 libgames_libretro_plugin_la_SOURCES = \
+	libretro-error.vala \
 	libretro-game-source.vala \
 	libretro-icon.vala \
 	libretro-plugin.vala \

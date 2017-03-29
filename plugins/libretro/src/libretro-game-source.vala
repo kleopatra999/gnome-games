@@ -3,6 +3,22 @@
 public class Games.LibretroGameSource : Object, GameSource {
 	private Game[] games;
 
+	public Game game_for_uri (string uri) throws Error {
+		if (!uri.has_prefix ("file:") || !uri.has_suffix (".libretro"))
+			throw new LibretroError.NOT_A_LIBRETRO_DESCRIPTOR ("This isn’t a Libretro core descriptor: %s", uri);
+
+		var file = File.new_for_uri (uri);
+		if (!file.query_exists ())
+			throw new LibretroError.NOT_A_LIBRETRO_DESCRIPTOR ("This isn’t a Libretro core descriptor: %s", uri);
+
+		var path = file.get_path ();
+		var core_descriptor = new Retro.CoreDescriptor (path);
+		if (!core_descriptor.get_is_game ())
+			throw new LibretroError.NOT_A_GAME ("This Libretro core descriptor doesn't isn’t a game: %s", uri);
+
+		return game_for_core_descriptor (core_descriptor);
+	}
+
 	public async void each_game (GameCallback callback) {
 		if (games == null)
 			yield fetch_games ();

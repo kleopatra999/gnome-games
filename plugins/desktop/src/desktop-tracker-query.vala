@@ -39,6 +39,12 @@ private class Games.DesktopTrackerQuery : Object, TrackerQuery {
 		}
 	}
 
+	public Game game_for_uri (string uri) throws Error {
+		throw new GenericUriGameFactoryError.INVALID_URI ("Invalid URI: %s.", uri);
+
+		return new DummyGame ("Dummy desktop game");
+	}
+
 	public void process_uri (string uri) throws Error {
 		check_uri (uri);
 

@@ -4,24 +4,28 @@ public class Games.GenericUriGameFactory : Object, UriGameFactory {
 	private const uint HANDLED_URIS_PER_CYCLE = 5;
 
 	private GameUriAdapter game_uri_adapter;
-	private UriTest? uri_validity_test;
+	private UriTest uri_validity_test;
 	private string[] uris;
 
-	public GenericUriGameFactory (GameUriAdapter game_uri_adapter, UriTest? uri_validity_test = null) {
+	public GenericUriGameFactory (GameUriAdapter game_uri_adapter, UriTest uri_validity_test) {
 		this.game_uri_adapter = game_uri_adapter;
 		this.uri_validity_test = uri_validity_test;
 		this.uris = {};
 	}
 
 	public bool is_uri_valid (string uri) {
-		if (uri_validity_test == null)
-			return true;
-
 		return uri_validity_test.is_uri_valid (uri);
 	}
 
 	public void add_uri (string uri) {
 		uris += uri;
+	}
+
+	public Game game_for_uri (string uri) throws Error {
+		if (!is_uri_valid (uri))
+			throw new GenericUriGameFactoryError.INVALID_URI ("Invalid URI: %s.", uri);
+
+		return game_uri_adapter.game_for_uri (uri);
 	}
 
 	public async void foreach_game (GameCallback game_callback) {
@@ -32,7 +36,7 @@ public class Games.GenericUriGameFactory : Object, UriGameFactory {
 				continue;
 
 			try {
-				Game game = yield game_uri_adapter.game_for_uri (uri);
+				Game game = yield game_uri_adapter.game_for_uri_async (uri);
 				game_callback (game);
 			}
 			catch (Error e) {
@@ -54,4 +58,8 @@ public class Games.GenericUriGameFactory : Object, UriGameFactory {
 			}
 		}
 	}
+}
+
+public errordomain GenericUriGameFactoryError {
+	INVALID_URI,
 }

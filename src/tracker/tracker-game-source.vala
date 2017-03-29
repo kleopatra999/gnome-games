@@ -18,6 +18,17 @@ public class Games.TrackerGameSource : Object, GameSource {
 		queries += query;
 	}
 
+	public Game game_for_uri (string uri) throws Error {
+		foreach (var query in queries)
+			try {
+				return query.game_for_uri (uri);
+			}
+			catch (Error e) {
+			}
+
+		throw new TrackerError.NOT_A_GAME ("This isn’t a game: %s", uri);
+	}
+
 	public async void each_game (GameCallback game_callback) {
 		for (size_t i = 0 ; i < queries.length ; i++)
 			yield each_game_for_query (game_callback, queries[i]);
@@ -76,4 +87,5 @@ public class Games.TrackerGameSource : Object, GameSource {
 
 public errordomain TrackerError {
 	FILE_NOT_FOUND,
+	NOT_A_GAME,
 }

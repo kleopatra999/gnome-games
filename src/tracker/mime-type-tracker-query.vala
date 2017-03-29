@@ -24,6 +24,20 @@ public class Games.MimeTypeTrackerQuery : Object, TrackerQuery {
 		uri_game_factory.add_uri (uri);
 	}
 
+	public Game game_for_uri (string uri) throws Error {
+		// FIXME
+//		if (!uri.has_prefix ("file:") || !uri.has_suffix (".libretro"))
+//			throw new LibretroError.NOT_A_LIBRETRO_DESCRIPTOR ("This isn’t a Libretro core descriptor: %s", uri);
+
+//		var file = File.new_for_uri (uri);
+//		if (!file.query_exists ())
+//			throw new LibretroError.NOT_A_LIBRETRO_DESCRIPTOR ("This isn’t a Libretro core descriptor: %s", uri);
+
+//		var path = file.get_path ();
+
+		return uri_game_factory.game_for_uri (uri);
+	}
+
 	public async void foreach_game (GameCallback game_callback) {
 		yield uri_game_factory.foreach_game (game_callback);
 	}

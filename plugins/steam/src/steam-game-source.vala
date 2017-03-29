@@ -46,6 +46,18 @@ private class Games.SteamGameSource : Object, GameSource {
 		}
 	}
 
+	public Game game_for_uri (string uri) throws Error {
+		// TODO Check URI is file://
+		var file = File.new_for_uri (uri);
+		// if (!file.query_exists ())
+			// TODO throw Error
+
+		var path = file.get_path ();
+		string game_id;
+
+		return game_for_appmanifest_path (path, out game_id);
+	}
+
 	public async void each_game (GameCallback game_callback) {
 		if (games == null)
 			games = new HashTable<string, Game> (str_hash, str_equal);
@@ -76,7 +88,10 @@ private class Games.SteamGameSource : Object, GameSource {
 		var name = info.get_name ();
 		if (appmanifest_regex.match (name)) {
 			try {
-				game_for_appmanifest_path (@"$directory/$name");
+				string game_id;
+				var game = game_for_appmanifest_path (@"$directory/$name", out game_id);
+				if (!(game_id in games))
+					games[game_id] = game;
 
 				Idle.add (this.game_for_file_info.callback);
 				yield;
@@ -87,7 +102,7 @@ private class Games.SteamGameSource : Object, GameSource {
 		}
 	}
 
-	private void game_for_appmanifest_path (string appmanifest_path) throws Error {
+	private Game game_for_appmanifest_path (string appmanifest_path, out string id) throws Error {
 		var registry = new SteamRegistry (appmanifest_path);
 		var game_id = registry.get_data ({"AppState", "appid"});
 		/* The game_id sometimes is identified by appID
@@ -98,15 +113,14 @@ private class Games.SteamGameSource : Object, GameSource {
 		if (game_id == null)
 			throw new SteamError.NO_APPID (_("Couldn’t get Steam appid from manifest “%s”."), appmanifest_path);
 
-		if (game_id in games)
-			return;
-
 		var title = new SteamTitle (registry);
 		var icon = new SteamIcon (game_id);
 		var cover = new SteamCover (game_id);
 		string[] args = { "steam", @"steam://rungameid/" + game_id };
 		var runner = new CommandRunner (args, false);
 
-		games[game_id] = new GenericGame (title, icon, cover, runner);
+		id = game_id;
+
+		return new GenericGame (title, icon, cover, runner);
 	}
 }

@@ -32,6 +32,10 @@ public class Games.PlayStationGameFactory : Object, UriGameFactory {
 		return file.query_exists ();
 	}
 
+	public Game game_for_uri (string uri) throws Error {
+		return new DummyGame ("Dummy playstation game");
+	}
+
 	public void add_uri (string uri) {
 		string disc_id;
 
