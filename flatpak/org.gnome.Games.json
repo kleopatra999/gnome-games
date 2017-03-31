@@ -2,6 +2,7 @@
     "app-id": "org.gnome.Games",
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.24",
+    "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-games",
     "tags": ["nightly"],
