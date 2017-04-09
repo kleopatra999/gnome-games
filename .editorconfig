@@ -1,0 +1,16 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+
+[*.{desktop,libretro}]
+indent_size = 0
+tab_size = 0
+indent_style = space
+
+[*.xml}
+indent_size = 2
+tab_size = 2
+indent_style = space
