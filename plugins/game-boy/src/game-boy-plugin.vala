@@ -12,8 +12,10 @@ private class Games.GameBoyPlugin : Object, Plugin {
 
 	public GameSource get_game_source () throws Error {
 		var game_uri_adapter = new GenericSyncGameUriAdapter (game_for_uri);
-		var game_boy_factory = new GenericUriGameFactory (game_uri_adapter);
-		var game_boy_color_factory = new GenericUriGameFactory (game_uri_adapter);
+		var game_boy_uri_test = new GenericMimeTypeUriTest (GAME_BOY_MIME_TYPE);
+		var game_boy_factory = new GenericUriGameFactory (game_uri_adapter, game_boy_uri_test);
+		var game_boy_color_uri_test = new GenericMimeTypeUriTest (GAME_BOY_COLOR_MIME_TYPE);
+		var game_boy_color_factory = new GenericUriGameFactory (game_uri_adapter, game_boy_color_uri_test);
 		var game_boy_query = new MimeTypeTrackerQuery (GAME_BOY_MIME_TYPE, game_boy_factory);
 		var game_boy_color_query = new MimeTypeTrackerQuery (GAME_BOY_COLOR_MIME_TYPE, game_boy_color_factory);
 		var connection = Tracker.Sparql.Connection.@get ();

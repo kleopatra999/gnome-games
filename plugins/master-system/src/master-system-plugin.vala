@@ -18,9 +18,12 @@ private class Games.MasterSystemPlugin : Object, Plugin {
 		var sg_1000_game_uri_adapter = new GenericSyncGameUriAdapter (sg_1000_game_for_uri);
 		// FIXME We should be able to use one factory for Master System and
 		// Game Gear.
-		var master_system_factory = new GenericUriGameFactory (game_uri_adapter);
-		var game_gear_factory = new GenericUriGameFactory (game_uri_adapter);
-		var sg_1000_factory = new GenericUriGameFactory (sg_1000_game_uri_adapter);
+		var master_system_uri_test = new GenericMimeTypeUriTest (MASTER_SYSTEM_MIME_TYPE);
+		var game_gear_uri_test = new GenericMimeTypeUriTest (GAME_GEAR_MIME_TYPE);
+		var sg_1000_uri_test = new GenericMimeTypeUriTest (SG_1000_MIME_TYPE);
+		var master_system_factory = new GenericUriGameFactory (game_uri_adapter, master_system_uri_test);
+		var game_gear_factory = new GenericUriGameFactory (game_uri_adapter, game_gear_uri_test);
+		var sg_1000_factory = new GenericUriGameFactory (sg_1000_game_uri_adapter, sg_1000_uri_test);
 		var master_system_query = new MimeTypeTrackerQuery (MASTER_SYSTEM_MIME_TYPE, master_system_factory);
 		var game_gear_query = new MimeTypeTrackerQuery (GAME_GEAR_MIME_TYPE, game_gear_factory);
 		var sg_1000_query = new MimeTypeTrackerQuery (SG_1000_MIME_TYPE, sg_1000_factory);

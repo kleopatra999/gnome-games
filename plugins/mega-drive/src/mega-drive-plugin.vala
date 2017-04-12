@@ -24,9 +24,14 @@ private class Games.MegaDrivePlugin : Object, Plugin {
 		var cd_game_uri_adapter = new GenericSyncGameUriAdapter (cd_game_for_uri);
 		// FIXME We should be able to use one factory for Mega Drive and
 		// 32X.
-		var mega_drive_factory = new GenericUriGameFactory (game_uri_adapter);
-		var 32x_factory = new GenericUriGameFactory (game_uri_adapter);
-		var mega_cd_factory = new GenericUriGameFactory (cd_game_uri_adapter);
+		var mega_drive_uri_test = new GenericMimeTypeUriTest (MEGA_DRIVE_MIME_TYPE);
+		var 32x_uri_test = new GenericMimeTypeUriTest (32X_MIME_TYPE);
+		// FIXME .cue is too generic, we should test further.
+		var mega_cd_uri_test = new GenericMimeTypeUriTest (CUE_MIME_TYPE);
+		// FIXME What about PICO_MIME_TYPE?
+		var mega_drive_factory = new GenericUriGameFactory (game_uri_adapter, mega_drive_uri_test);
+		var 32x_factory = new GenericUriGameFactory (game_uri_adapter, 32x_uri_test);
+		var mega_cd_factory = new GenericUriGameFactory (cd_game_uri_adapter, mega_cd_uri_test);
 		var mega_drive_query = new MimeTypeTrackerQuery (MEGA_DRIVE_MIME_TYPE, mega_drive_factory);
 		var 32x_query = new MimeTypeTrackerQuery (32X_MIME_TYPE, 32x_factory);
 		var mega_cd_query = new MimeTypeTrackerQuery (CUE_MIME_TYPE, mega_cd_factory);

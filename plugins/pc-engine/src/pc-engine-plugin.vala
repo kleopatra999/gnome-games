@@ -13,8 +13,11 @@ private class Games.PcEnginePlugin : Object, Plugin {
 	public GameSource get_game_source () throws Error {
 		var game_uri_adapter = new GenericSyncGameUriAdapter (game_for_uri);
 		var cd_game_uri_adapter = new GenericSyncGameUriAdapter (cd_game_for_uri);
-		var factory = new GenericUriGameFactory (game_uri_adapter);
-		var cd_factory = new GenericUriGameFactory (cd_game_uri_adapter);
+		var uri_test = new GenericMimeTypeUriTest (MIME_TYPE);
+		// FIXME .cue is too generic, we should test further.
+		var cd_uri_test = new GenericMimeTypeUriTest (CUE_MIME_TYPE);
+		var factory = new GenericUriGameFactory (game_uri_adapter, uri_test);
+		var cd_factory = new GenericUriGameFactory (cd_game_uri_adapter, cd_uri_test);
 		var query = new MimeTypeTrackerQuery (MIME_TYPE, factory);
 		var cd_query = new MimeTypeTrackerQuery (CUE_MIME_TYPE, cd_factory);
 		var connection = Tracker.Sparql.Connection.@get ();

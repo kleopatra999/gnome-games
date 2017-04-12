@@ -7,7 +7,9 @@ private class Games.SegaSaturnPlugin : Object, Plugin {
 
 	public GameSource get_game_source () throws Error {
 		var game_uri_adapter = new GenericSyncGameUriAdapter (game_for_uri);
-		var factory = new GenericUriGameFactory (game_uri_adapter);
+		// FIXME .cue is too generic, we should test further.
+		var uri_test = new GenericMimeTypeUriTest (SEARCHED_MIME_TYPE);
+		var factory = new GenericUriGameFactory (game_uri_adapter, uri_test);
 		var query = new MimeTypeTrackerQuery (SEARCHED_MIME_TYPE, factory);
 		var connection = Tracker.Sparql.Connection.@get ();
 		var source = new TrackerGameSource (connection);

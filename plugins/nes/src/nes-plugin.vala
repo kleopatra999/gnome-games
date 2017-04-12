@@ -15,8 +15,10 @@ private class Games.NesPlugin : Object, Plugin {
 	public GameSource get_game_source () throws Error {
 		var nes_game_uri_adapter = new GenericSyncGameUriAdapter (nes_game_for_uri);
 		var fds_game_uri_adapter = new GenericSyncGameUriAdapter (fds_game_for_uri);
-		var nes_factory = new GenericUriGameFactory (nes_game_uri_adapter);
-		var fds_factory = new GenericUriGameFactory (fds_game_uri_adapter);
+		var nes_uri_test = new GenericMimeTypeUriTest (NES_MIME_TYPE);
+		var fds_uri_test = new GenericMimeTypeUriTest (FDS_MIME_TYPE);
+		var nes_factory = new GenericUriGameFactory (nes_game_uri_adapter, nes_uri_test);
+		var fds_factory = new GenericUriGameFactory (fds_game_uri_adapter, fds_uri_test);
 		var nes_query = new MimeTypeTrackerQuery (NES_MIME_TYPE, nes_factory);
 		var fds_query = new MimeTypeTrackerQuery (FDS_MIME_TYPE, fds_factory);
 		var connection = Tracker.Sparql.Connection.@get ();
