@@ -1,21 +1,23 @@
 // This file is part of GNOME Games. License: GPL-3.0+.
 
 public class Games.GenericUriGameFactory : Object, UriGameFactory {
-	public delegate bool UriTest (string uri);
 	private const uint HANDLED_URIS_PER_CYCLE = 5;
 
 	private GameUriAdapter game_uri_adapter;
 	private UriTest? uri_validity_test;
 	private string[] uris;
 
-	public GenericUriGameFactory (GameUriAdapter game_uri_adapter, owned UriTest? uri_validity_test = null) {
+	public GenericUriGameFactory (GameUriAdapter game_uri_adapter, UriTest? uri_validity_test = null) {
 		this.game_uri_adapter = game_uri_adapter;
-		this.uri_validity_test = (owned) uri_validity_test;
+		this.uri_validity_test = uri_validity_test;
 		this.uris = {};
 	}
 
 	public bool is_uri_valid (string uri) {
-		return uri_validity_test == null ? true : uri_validity_test (uri);
+		if (uri_validity_test == null)
+			return true;
+
+		return uri_validity_test.is_uri_valid (uri);
 	}
 
 	public void add_uri (string uri) {
